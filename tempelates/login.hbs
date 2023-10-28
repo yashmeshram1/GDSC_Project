@@ -8,8 +8,21 @@
     <STyle>
         body{
             background: url("bgnew.svg");
+            font-size: 20px;
             
         }
+        .form-container{
+    width: 400px;
+    margin: 0 auto;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+p{
+    color: antiquewhite;
+    margin-top: 15px;
+}
     </STyle>
 </head>
 <body>
@@ -19,16 +32,16 @@
         <h2>Login</h2>
         <form action="/login" method="post">
             <div class="form-group">
-                <label for="email">Email</label>
+                <label for="email" style="color:antiquewhite;">Email</label>
                 <input type="email" id="email" name="email" placeholder="Enter your email" required autocomplete="off">
             </div>
             <div class="form-group">
-                <label for="password">Password</label>
+                <label for="password" style="color: antiquewhite;">Password</label>
                 <input type="password" name="password" id="password" placeholder="Enter your password" required>
             </div>
             <button type="submit" class="submit-btn">Login</button>
         </form>
-        <p>Don't have and account? <a href="/signup">Signup</a></p>
+        <p>Don't have and account? <a href="/signup" style="color: blue;">Signup</a></p>
     </div>
 </body>
 </html>

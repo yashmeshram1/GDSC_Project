@@ -5,14 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/logsig.css">
+   
     <STyle>
         body{
-            background: url("bgnew.svg");
+            background: url('img.jpg') no-repeat;
+            background-size: cover;
+            background-position: center;
             font-size: 20px;
             
         }
         .form-container{
     width: 400px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, alpha.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    
+    border-radius: 10px;
     margin: 0 auto;
     padding: 50px;
     border: 1px solid #ccc;
@@ -27,11 +37,12 @@ p{
 </head>
 <body>
     <div class="form-container">
-        <h2>Sign Up</h2>
+        <h2 style="color: antiquewhite;">Sign Up</h2>
         <form action="/signup" method="post" >
             <div class="form-group">
                 <label for="name" style="color: antiquewhite;">Name</label>
                 <input type="text" id="name" name="name" placeholder="Enter your name" required autocomplete="off">
+                
             </div>
             <div class="form-group">
                 <label for="email" style="color: antiquewhite;">Email</label>

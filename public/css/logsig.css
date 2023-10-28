@@ -35,21 +35,29 @@ h2{
 .form-group input{
     width: 100%;
     padding: 8px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 3px;
+}
+.form-group input::placeholder{
+    color: #fff;
 }
 .submit-btn{
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #472dbb;
-    color: #fff; 
+    background-color: #ccc;
+    color: black; 
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 .submit-btn:hover{
-    background-color: #4565a0;
+    background-color: gold;
 
 }

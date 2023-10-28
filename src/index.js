@@ -90,6 +90,7 @@ app.post("/signup",async(req,res)=>{
                 token:token
             }
             await Collection.insertMany([data]);
+            res.send("User registered successfully");
         }
 
     }
